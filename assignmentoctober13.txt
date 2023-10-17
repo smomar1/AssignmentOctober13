@@ -1,0 +1,23 @@
+Layout and Theme Description:
+
+Font Families: For the website, let's use two Google Fonts:
+
+Heading Font: "Montserrat"
+Body Text Font: "Open Sans"
+Page Colors:
+
+Background Color: Light gray (#f5f5f5)
+Header Background Color: Navy blue (#000080)
+Header Text Color: White (#ffffff)
+Navigation Link Color: Light blue (#87CEEB)
+Text Color: Black (#000000)
+Form Input Background Color: White (#ffffff)
+Form Input Border Color: Light gray (#d3d3d3)
+Form Button Background Color: Navy blue (#000080)
+Form Button Text Color: White (#ffffff)
+Layout:
+
+Navigation bar should be fixed at the top with menu options displayed side by side.
+The images should be displayed side by side in computer mode and one on top of the other in mobile mode.
+The 4-6 options should be displayed as a responsive grid.
+Form and table should be styled for improved aesthetics.

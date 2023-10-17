@@ -1,0 +1,146 @@
+/* Reset some default styles for consistency */
+body, h1, h2, h3, p, ul, li, form, table {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+header {
+    background-color: #000080;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #87CEEB;
+}
+
+section {
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Style the grid options */
+    .grid-item {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+/* Style the form */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d3d3d3;
+    background-color: #fff;
+}
+
+form input[type="submit"] {
+    background-color: #000080;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Style the gallery section */
+#gallery {
+    position: relative; /* Create a stacking context for absolute positioning */
+    padding: 20px 0; /* Add some padding for spacing */
+    text-align: center; /* Center buttons */
+}
+
+.gallery-container {
+    display: flex; /* Display images side by side */
+    overflow: hidden; /* Hide overflow to create a fixed-width gallery */
+    margin: 0 auto; /* Center the gallery horizontally */
+    max-width: 100%; /* Ensure the gallery fits within the container */
+    width: fit-content; /* Allow the gallery to shrink to its content */
+}
+
+.image-container {
+    flex: 0 0 auto; /* Don't allow images to grow or shrink */
+    margin-right: 10px; /* Add some spacing between images */
+    width: 400px; /* Set a fixed width for each image container */
+    height: 300px; /* Set a fixed height for each image container */
+    position: relative; /* Create a stacking context for overlaying buttons */
+}
+
+/* Style images within the container */
+.image-container img {
+    width: 100%; /* Make the images fill the container */
+    height: 100%; /* Make the images fill the container */
+    object-fit: cover; /* Preserve aspect ratio and cover the container */
+}
+
+/* Style gallery navigation buttons */
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #d3d3d3;
+    padding: 10px;
+    text-align: left;
+}
